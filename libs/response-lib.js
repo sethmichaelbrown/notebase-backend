@@ -7,6 +7,8 @@ export function failure(body) {
 }
 
 function buildResponse(statusCode, body) {
+
+  console.log('body', body)
   return {
     statusCode: statusCode,
     headers: {
